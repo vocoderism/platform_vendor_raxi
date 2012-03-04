@@ -60,6 +60,12 @@ PRODUCT_COPY_FILES += \
 # Block based ota flag default to off to get old style ota zip back (To get back block based zip, just enable to true.)
 #TARGET_USES_BLOCK_BASED_OTA := false
 
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/raxi/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/raxi/prebuilt/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/raxi/prebuilt/bin/50-base.sh:system/addon.d/50-base.sh \
+
 # Latin IME lib - gesture typing
 PRODUCT_COPY_FILES += \
     vendor/raxi/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
