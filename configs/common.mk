@@ -13,8 +13,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.error.receiver.system.apps=com.google.android.gms \
     ro.setupwizard.enterprise_mode=1 \
-    ro.layers.noIcon=noIcon \
     keyguard.no_require_sim=true \
+    ro.layers.noIcon=noIcon \
     ro.facelock.black_timeout=400 \
     ro.facelock.det_timeout=1500 \
     ro.facelock.rec_timeout=2500 \
@@ -45,3 +45,7 @@ PRODUCT_COPY_FILES += \
 # Bootanimation support
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/bootanimation.zip:system/media/bootanimation.zip
+
+# Layers Manager
+PRODUCT_COPY_FILES += \
+    vendor/raxi/prebuilts/common/app/layersmanager.apk:system/app/layersmanager.apk
