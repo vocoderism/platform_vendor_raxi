@@ -28,6 +28,9 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/raxi/overlays/common
 # Needed Packages
 PRODUCT_PACKAGES += \
 Launcher3 \
+LockClock \
+ScreenRecorder \
+libscreenrecorder \
 
 # Proprietary latinime lib needed for swyping
 PRODUCT_COPY_FILES += \
