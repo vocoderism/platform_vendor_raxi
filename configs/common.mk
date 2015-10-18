@@ -20,6 +20,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.adb.secure=1 \
     persist.sys.usb.config=mtp,adb
 
+# Extra packages
+PRODUCT_PACKAGES += \
+    Busybox \
+    Exchange2 \
+    Launcher3 \
+    Stk 
+
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/raxi/overlay/common
@@ -39,9 +46,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/raxi/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 
-#SuperSU
+# SuperSU
 PRODUCT_COPY_FILES += \
-        vendor/raxi/prebuilt/common/system/app/Superuser.apk:system/app/Superuser.apk
+    vendor/raxi/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+    vendor/raxi/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
 #Layers
 PRODUCT_COPY_FILES += \
