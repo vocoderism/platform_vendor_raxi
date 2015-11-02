@@ -18,7 +18,29 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.dun.override=0 \
     ro.build.selinux=1 \
     ro.adb.secure=1 \
-    persist.sys.usb.config=mtp,adb
+    persist.sys.usb.config=mtp,adb \
+    ro.qti.sensors.max_geomag_rotv=60 \
+    ro.qti.sensors.max_gyro_rate=200 \
+    ro.qti.sensors.max_accel_rate=200 \
+    ro.qti.sensors.max_grav=200 \
+    ro.qti.sensors.max_rotvec=200 \
+    ro.qti.sensors.max_orient=200 \
+    ro.qti.sensors.max_linacc=200 \
+    ro.qti.sensors.max_gamerv_rate=200 \
+    ro.qti.sensors.smd=true \
+    ro.qti.sensors.game_rv=true \
+    ro.qti.sensors.georv=true \
+    net.tethering.noprovisioning=true \
+    log.tag.launcher_force_rotate=VERBOSE \
+    persist.sys.NV_FPSLIMIT=90 \
+    persist.sys.NV_POWERMODE=1 \
+    persist.sys.NV_PROFOVER=15 \
+    persist.sys.NV_STEREOCTRL=0 \
+    persist.sys.NV_STEREOSEPCHG=0 \
+    persist.sys.NV_STEREOSEP=20 \
+    profiler.debugmonitor=false \
+    profiler.launch=false \
+    profiler.hung.dumpdobugreport=false 
 
 # Extra packages
 PRODUCT_PACKAGES += \
@@ -54,6 +76,10 @@ PRODUCT_COPY_FILES += \
 #Layers
 PRODUCT_COPY_FILES += \
         vendor/raxi/prebuilt/common/system/app/layersmanager.apk:system/app/layersmanager.apk
+
+#Doze
+PRODUCT_COPY_FILES += \
+        vendor/raxi/prebuilt/common/system/app/DozeEditor.apk:system/app/DozeEditor.apk
 
 #Explorer
 PRODUCT_COPY_FILES += \
