@@ -84,3 +84,4 @@ PRODUCT_COPY_FILES += \
 #Bootanimation
 PRODUCT_COPY_FILES += \
         vendor/raxi/prebuilt/common/system/media/bootanimation.zip:system/media/bootanimation.zip
+
