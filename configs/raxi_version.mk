@@ -11,3 +11,4 @@ RAXI_VERSION := $(PRODUCT_NAME)-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR
 # Write Raxifian-OS into to build.prop
       PRODUCT_PROPERTY_OVERRIDES += \
         ro.raxi.version=$(RAXI_VERSION)
+        
