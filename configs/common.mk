@@ -85,3 +85,5 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
         vendor/raxi/prebuilt/common/system/media/bootanimation.zip:system/media/bootanimation.zip
 
+#Include raxi_version.mk
+-include vendor/raxi/configs/raxi_version.mk 
