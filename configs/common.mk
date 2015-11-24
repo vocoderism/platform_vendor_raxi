@@ -77,10 +77,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
         vendor/raxi/prebuilt/common/system/app/layersmanager.apk:system/app/layersmanager.apk
 
-#Explorer
-PRODUCT_COPY_FILES += \
-        vendor/raxi/prebuilt/common/system/app/explorer.apk:system/app/explorer.apk
-
 #Bootanimation
 PRODUCT_COPY_FILES += \
         vendor/raxi/prebuilt/common/system/media/bootanimation.zip:system/media/bootanimation.zip
