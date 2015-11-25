@@ -73,6 +73,10 @@ PRODUCT_COPY_FILES += \
     vendor/raxi/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
     vendor/raxi/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
+# Kernel Adiutor
+PRODUCT_COPY_FILES += \
+    vendor/raxi/prebuilt/common/system/app/com.grarak.kerneladiutor.apk:system/app/com.grarak.kerneladiutor/kernel.apk
+
 #Layers
 PRODUCT_COPY_FILES += \
         vendor/raxi/prebuilt/common/system/app/layersmanager.apk:system/app/layersmanager.apk
