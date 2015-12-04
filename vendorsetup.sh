@@ -2,4 +2,3 @@ add_lunch_combo raxi_hammerhead-userdebug
 add_lunch_combo raxi_mako-userdebug
 add_lunch_combo raxi_shamu-userdebug
 add_lunch_combo raxi_tuna-userdebug
-add_lunch_combo raxi_angler-userdebug
