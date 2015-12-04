@@ -75,7 +75,11 @@ PRODUCT_COPY_FILES += \
 
 # Kernel Adiutor
 PRODUCT_COPY_FILES += \
-    vendor/raxi/prebuilt/common/system/app/com.grarak.kerneladiutor.apk:system/app/com.grarak.kerneladiutor/kernel.apk
+   vendor/raxi/prebuilt/common/system/app/com.grarak.kerneladiutor.apk:system/app/com.grarak.kerneladiutor/kernel.apk
+
+# Init.d script support
+PRODUCT_COPY_FILES += \
+    vendor/raxi/prebuilt/common/bin/sysinit:system/bin/sysinit
 
 #Layers
 PRODUCT_COPY_FILES += \
