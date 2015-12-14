@@ -47,6 +47,7 @@ PRODUCT_PACKAGES += \
     Busybox \
     Exchange2 \
     Launcher3 \
+    CalendarProvider \
     Stk 
 
 # Common overlay
